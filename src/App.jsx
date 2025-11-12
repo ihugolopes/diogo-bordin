@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/diogo-bordin">
       <div className="app">
         <Header />
         <Routes>
