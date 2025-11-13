@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/diogo-bordin">
+    <Router>
       <Preloader />
       <CustomCursor />
       <div className="app">
