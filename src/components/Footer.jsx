@@ -25,9 +25,6 @@ function Footer() {
           <div className="footer-section">
             <h4>Services</h4>
             <ul>
-              <li><a href="#workshops">Workshops</a></li>
-              <li><a href="#podcast">Podcast</a></li>
-              <li><a href="#blog">Blog</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>

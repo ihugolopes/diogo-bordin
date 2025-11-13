@@ -41,10 +41,6 @@ function Header() {
             <li><a href="#stills">STILLS</a></li>
             <li><a href="#motion">MOTION</a></li>
             <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#workshops">WORKSHOPS & MENTORING</a></li>
-            <li><a href="#podcast">PODCAST</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#prints">BUY PRINTS</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
