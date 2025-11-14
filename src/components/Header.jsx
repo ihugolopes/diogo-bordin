@@ -38,11 +38,9 @@ function Header() {
 
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
-            <li><a href="#stills">STILLS</a></li>
-            <li><a href="#motion">MOTION</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#portfolio">PORTFÓLIO</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#contact">CONTATO</a></li>
           </ul>
         </nav>
       </div>

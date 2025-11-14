@@ -35,7 +35,7 @@ function Preloader() {
               animate={{ width: '100%' }}
               transition={{ duration: 1.5, ease: 'easeInOut' }}
             />
-            <p>UNDERWATER PHOTOGRAPHER</p>
+            <p>FOTOGRAFIA</p>
           </motion.div>
         </motion.div>
       )}

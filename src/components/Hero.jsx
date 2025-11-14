@@ -1,17 +1,20 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Hero.css';
+import img1 from '../assets/images/inicio/IMG_9240.jpg';
+import img2 from '../assets/images/inicio/JPEG image 3.jpg';
+import img3 from '../assets/images/inicio/horizonta60x40-1.png';
+import img4 from '../assets/images/inicio/horizonta60x40-2.png';
 
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [scrollY, setScrollY] = useState(0);
 
   const backgroundImages = [
-    'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80',
-    'https://images.unsplash.com/photo-1583585635793-0e1894c169bd?w=1920&q=80',
-    'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80',
-    'https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?w=1920&q=80',
-    'https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=1920&q=80',
+    img1,
+    img2,
+    img3,
+    img4,
   ];
 
   useEffect(() => {
@@ -59,9 +62,9 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          UNDERWATER PHOTOGRAPHER
+          FOTOGRAFIA, MODA
           <br />
-          & CINEMATOGRAPHER
+          E PUBLICIDADE
         </motion.h1>
         <motion.p
           className="hero-subtitle"
@@ -69,7 +72,7 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}
         >
-          Creating stunning imagery beneath the surface
+          Imagens autorais com clareza, estética e propósito
         </motion.p>
         <motion.div
           className="hero-cta"
@@ -77,8 +80,8 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.5 }}
         >
-          <a href="#portfolio" className="btn-primary">View Portfolio</a>
-          <a href="#contact" className="btn-secondary">Book a Shoot</a>
+          <a href="#portfolio" className="btn-primary">Ver Portfólio</a>
+          <a href="#contact" className="btn-secondary">Entrar em Contato</a>
         </motion.div>
       </motion.div>
     </section>

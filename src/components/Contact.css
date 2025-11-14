@@ -57,8 +57,9 @@
 
 .contact-item p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   color: #fff;
+  font-weight: 500;
 }
 
 .social-links {

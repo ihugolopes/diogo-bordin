@@ -9,43 +9,30 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3>DIOGO BORDIN</h3>
-            <p>Underwater Photographer & Cinematographer</p>
+            <p>Fotógrafo & Modelo</p>
           </div>
 
           <div className="footer-section">
-            <h4>Quick Links</h4>
+            <h4>Links Rápidos</h4>
             <ul>
-              <li><a href="#stills">Stills</a></li>
-              <li><a href="#motion">Motion</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h4>Connect</h4>
-            <div className="footer-social">
-              <a href="#" aria-label="Instagram">IG</a>
-              <a href="#" aria-label="Twitter">TW</a>
-              <a href="#" aria-label="Facebook">FB</a>
-              <a href="#" aria-label="YouTube">YT</a>
-            </div>
+            <h4>Contato</h4>
+            <p>contato@dbordin.com</p>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Diogo Bordin. All rights reserved.</p>
+          <p>&copy; {currentYear} Diogo Bordin. Todos os direitos reservados.</p>
           <div className="footer-links">
-            <a href="#privacy">Privacy Policy</a>
+            <a href="#privacy">Política de Privacidade</a>
             <span>•</span>
-            <a href="#terms">Terms of Service</a>
+            <a href="#terms">Termos de Serviço</a>
           </div>
         </div>
       </div>

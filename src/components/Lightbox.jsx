@@ -61,17 +61,6 @@ function Lightbox({ isOpen, image, onClose, onNext, onPrev }) {
             onClick={(e) => e.stopPropagation()}
           >
             <img src={image?.image} alt={image?.title} />
-            <div className="lightbox-info">
-              <h3>{image?.title}</h3>
-              {image?.exif && (
-                <div className="lightbox-exif">
-                  <span>📷 {image.exif.camera}</span>
-                  <span>ISO {image.exif.iso}</span>
-                  <span>f/{image.exif.aperture}</span>
-                  <span>{image.exif.shutter}</span>
-                </div>
-              )}
-            </div>
           </motion.div>
         </motion.div>
       )}

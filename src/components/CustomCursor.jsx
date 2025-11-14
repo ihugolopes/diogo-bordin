@@ -5,6 +5,7 @@ import './CustomCursor.css';
 function CustomCursor() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+  const [isClicking, setIsClicking] = useState(false);
 
   useEffect(() => {
     const updateMousePosition = (e) => {
@@ -24,45 +25,40 @@ function CustomCursor() {
       }
     };
 
+    const handleMouseDown = () => setIsClicking(true);
+    const handleMouseUp = () => setIsClicking(false);
+
     window.addEventListener('mousemove', updateMousePosition);
     document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener('mousedown', handleMouseDown);
+    document.addEventListener('mouseup', handleMouseUp);
 
     return () => {
       window.removeEventListener('mousemove', updateMousePosition);
       document.removeEventListener('mouseover', handleMouseOver);
+      document.removeEventListener('mousedown', handleMouseDown);
+      document.removeEventListener('mouseup', handleMouseUp);
     };
   }, []);
 
   return (
-    <>
-      <motion.div
-        className="custom-cursor"
-        animate={{
-          x: mousePosition.x - 20,
-          y: mousePosition.y - 20,
-          scale: isHovering ? 1.5 : 1,
-        }}
-        transition={{
-          type: 'spring',
-          stiffness: 500,
-          damping: 28,
-          mass: 0.5,
-        }}
-      />
-      <motion.div
-        className="custom-cursor-dot"
-        animate={{
-          x: mousePosition.x - 4,
-          y: mousePosition.y - 4,
-          scale: isHovering ? 0 : 1,
-        }}
-        transition={{
-          type: 'spring',
-          stiffness: 1000,
-          damping: 30,
-        }}
-      />
-    </>
+    <motion.div
+      className="custom-cursor-modern"
+      animate={{
+        x: mousePosition.x - 8,
+        y: mousePosition.y - 8,
+        scale: isClicking ? 0.5 : isHovering ? 2.5 : 1,
+        opacity: isHovering ? 0.6 : 1,
+      }}
+      transition={{
+        x: { type: 'spring', stiffness: 400, damping: 30 },
+        y: { type: 'spring', stiffness: 400, damping: 30 },
+        scale: { type: 'spring', stiffness: 250, damping: 20 },
+        opacity: { duration: 0.2 },
+      }}
+    >
+      <div className="cursor-trail" />
+    </motion.div>
   );
 }
 

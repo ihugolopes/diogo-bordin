@@ -1,46 +1,36 @@
 import './About.css';
+import profileImage from '../assets/images/IMG_4903.JPG';
 
 function About() {
   return (
     <section className="about" id="about">
       <div className="about-container">
         <div className="about-content">
-          <h2 className="about-title">ABOUT DIOGO BORDIN</h2>
+          <h2 className="about-title">SOBRE MIM</h2>
           <div className="about-text">
             <p>
-              Diogo Bordin is an internationally recognized underwater photographer and cinematographer
-              based in Los Angeles. With over 15 years of experience, Diogo has worked with some of the
-              biggest names in entertainment, fashion, and advertising.
+              Sou Diogo, fotógrafo e modelo com experiência em moda, publicidade e projetos audiovisuais.
+              Trabalho há mais de 15 anos no mercado criativo e já atuei em diferentes países, o que ajudou
+              a ampliar meu olhar e a maneira como construo imagens.
             </p>
             <p>
-              Specializing in underwater portraiture and commercial work, Diogo brings a unique artistic
-              vision to every project. His work has been featured in major publications worldwide and
-              has earned numerous industry awards.
+              A fotografia faz parte do meu dia a dia tanto em trabalhos comerciais quanto em projetos pessoais.
+              Tenho formação e prática em várias etapas da produção — da criação à pós — o que me permite trabalhar
+              de forma completa e consistente.
             </p>
             <p>
-              Beyond his commercial work, Diogo is passionate about education and mentoring. He teaches
-              underwater photography workshops around the world and hosts "The Underwater Podcast,"
-              where he interviews other professionals in the field.
+              No meu trabalho, priorizo clareza, estética e naturalidade. Gosto de imagens que comunicam sem excessos
+              e que refletem a essência do momento ou da pessoa fotografada.
             </p>
-          </div>
-          <div className="about-stats">
-            <div className="stat">
-              <h3>15+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div className="stat">
-              <h3>500+</h3>
-              <p>Projects Completed</p>
-            </div>
-            <div className="stat">
-              <h3>50+</h3>
-              <p>Awards Won</p>
-            </div>
+            <p>
+              Se quiser desenvolver um projeto comigo, estou disponível para criar algo direto, bem executado e
+              alinhado com o que você precisa.
+            </p>
           </div>
         </div>
         <div className="about-image">
           <div className="image-placeholder">
-            <img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=800" alt="Brett Stanley" />
+            <img src={profileImage} alt="Diogo Bordin" />
           </div>
         </div>
       </div>
