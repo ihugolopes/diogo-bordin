@@ -101,13 +101,13 @@
   overflow: hidden;
 }
 
-.portfolio-image-wrapper img {
+.portfolio-item .progressive-image {
   width: 100%;
   display: block;
   transition: transform 0.5s ease;
 }
 
-.portfolio-item:hover .portfolio-image-wrapper img {
+.portfolio-item:hover .progressive-image {
   transform: scale(1.1);
 }
 

@@ -1,0 +1,38 @@
+.progressive-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progressive-image {
+  width: 100%;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.progressive-image.loading {
+  filter: blur(10px);
+}
+
+.progressive-image.loaded {
+  filter: blur(0);
+}
+
+.progressive-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

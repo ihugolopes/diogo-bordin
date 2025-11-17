@@ -95,6 +95,22 @@
   width: 100%;
 }
 
+.instagram-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.instagram-icon:hover {
+  transform: scale(1.1);
+}
+
+.instagram-icon::after {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .mobile-menu-btn {
     display: flex;

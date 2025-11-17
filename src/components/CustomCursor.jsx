@@ -17,7 +17,10 @@ function CustomCursor() {
         e.target.tagName === 'A' ||
         e.target.tagName === 'BUTTON' ||
         e.target.closest('.portfolio-item') ||
-        e.target.closest('.filter-btn')
+        e.target.closest('.filter-btn') ||
+        e.target.closest('.lightbox-close') ||
+        e.target.closest('.lightbox-nav') ||
+        e.target.closest('.lightbox-overlay')
       ) {
         setIsHovering(true);
       } else {
@@ -45,10 +48,10 @@ function CustomCursor() {
     <motion.div
       className="custom-cursor-modern"
       animate={{
-        x: mousePosition.x - 8,
-        y: mousePosition.y - 8,
-        scale: isClicking ? 0.5 : isHovering ? 2.5 : 1,
-        opacity: isHovering ? 0.6 : 1,
+        x: mousePosition.x - 12,
+        y: mousePosition.y - 12,
+        scale: isClicking ? 0.6 : isHovering ? 2 : 1,
+        opacity: 1,
       }}
       transition={{
         x: { type: 'spring', stiffness: 400, damping: 30 },

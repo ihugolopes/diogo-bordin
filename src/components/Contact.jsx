@@ -38,6 +38,10 @@ function Contact() {
               <h3>Email</h3>
               <p>contato@dbordin.com</p>
             </div>
+            <div className="contact-item">
+              <h3>Instagram</h3>
+              <p><a href="https://instagram.com/projectdbordin" target="_blank" rel="noopener noreferrer">@projectdbordin</a></p>
+            </div>
           </div>
         </div>
       </div>

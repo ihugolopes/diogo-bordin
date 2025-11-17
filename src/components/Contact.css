@@ -62,6 +62,16 @@
   font-weight: 500;
 }
 
+.contact-item p a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item p a:hover {
+  color: #ccc;
+}
+
 .social-links {
   display: flex;
   gap: 1.5rem;

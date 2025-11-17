@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Masonry from 'react-masonry-css';
 import Lightbox from './Lightbox';
+import ProgressiveImage from './ProgressiveImage';
 import './Portfolio.css';
 
 // Portraits
@@ -34,6 +35,36 @@ import p26 from '../assets/images/portraits/_MG_9089-5.jpg';
 import p27 from '../assets/images/portraits/ana3.jpg';
 import p28 from '../assets/images/portraits/lagarto.jpg';
 
+// Portraits Thumbnails
+import p1thumb from '../assets/images/thumbnails/portraits/550A8F47-EF1E-4AD0-992B-857D56C5814B.jpg';
+import p2thumb from '../assets/images/thumbnails/portraits/CY5A0692.jpg';
+import p3thumb from '../assets/images/thumbnails/portraits/CY5A0700.jpg';
+import p4thumb from '../assets/images/thumbnails/portraits/CY5A0717-Edit-2.jpg';
+import p5thumb from '../assets/images/thumbnails/portraits/CY5A0731-Edit-2.jpg';
+import p6thumb from '../assets/images/thumbnails/portraits/CY5A0735.jpg';
+import p7thumb from '../assets/images/thumbnails/portraits/CY5A1435.jpg';
+import p8thumb from '../assets/images/thumbnails/portraits/CY5A1457.jpg';
+import p9thumb from '../assets/images/thumbnails/portraits/CY5A1490P.jpg';
+import p10thumb from '../assets/images/thumbnails/portraits/CY5A1746.jpg';
+import p11thumb from '../assets/images/thumbnails/portraits/CY5A1761.jpg';
+import p12thumb from '../assets/images/thumbnails/portraits/Canon EOS 7D120.jpg';
+import p13thumb from '../assets/images/thumbnails/portraits/Canon EOS 7D189.jpg';
+import p14thumb from '../assets/images/thumbnails/portraits/E449AEAF-4A41-4C2C-B5FC-3CAF0DA55CFE.jpg';
+import p15thumb from '../assets/images/thumbnails/portraits/IMG_1208.jpg';
+import p16thumb from '../assets/images/thumbnails/portraits/IMG_3187.jpg';
+import p17thumb from '../assets/images/thumbnails/portraits/_MG_0169-1.jpg';
+import p18thumb from '../assets/images/thumbnails/portraits/_MG_0273-38.jpg';
+import p19thumb from '../assets/images/thumbnails/portraits/_MG_0289-1.jpg';
+import p20thumb from '../assets/images/thumbnails/portraits/_MG_0333-54.jpg';
+import p21thumb from '../assets/images/thumbnails/portraits/_MG_6303-1.jpg';
+import p22thumb from '../assets/images/thumbnails/portraits/_MG_7370-1.jpg';
+import p23thumb from '../assets/images/thumbnails/portraits/_MG_7411-3.jpg';
+import p24thumb from '../assets/images/thumbnails/portraits/_MG_7766-1.jpg';
+import p25thumb from '../assets/images/thumbnails/portraits/_MG_8093-1.jpg';
+import p26thumb from '../assets/images/thumbnails/portraits/_MG_9089-5.jpg';
+import p27thumb from '../assets/images/thumbnails/portraits/ana3.jpg';
+import p28thumb from '../assets/images/thumbnails/portraits/lagarto.jpg';
+
 // Campanha Italia
 import c1 from '../assets/images/campanha/Italia/_MG_0205-26.jpg';
 import c2 from '../assets/images/campanha/Italia/_MG_0206-27.jpg';
@@ -55,6 +86,25 @@ import c15 from '../assets/images/campanha/LVYL/IMG_2396.JPG';
 import c16 from '../assets/images/campanha/LVYL/IMG_2401.JPG';
 import c17 from '../assets/images/campanha/LVYL/IMG_2406.JPG';
 
+// Campanha Thumbnails
+import c1thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0205-26.jpg';
+import c2thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0206-27.jpg';
+import c3thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0298-45.jpg';
+import c4thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0299-46.jpg';
+import c5thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0311-48.jpg';
+import c6thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0312-49.jpg';
+import c7thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0402-67.jpg';
+import c8thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0416-70.jpg';
+import c9thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0515-91.jpg';
+import c10thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2313.jpg';
+import c11thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2339.jpg';
+import c12thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2340.jpg';
+import c13thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2362.jpg';
+import c14thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2387.jpg';
+import c15thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2396.jpg';
+import c16thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2401.jpg';
+import c17thumb from '../assets/images/thumbnails/campanha/LVYL/IMG_2406.jpg';
+
 function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -62,53 +112,53 @@ function Portfolio() {
 
   const portfolioItems = [
     // Portraits
-    { id: 1, category: 'stills', title: 'Retrato 1', image: p1, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 2, category: 'stills', title: 'Retrato 2', image: p2, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 3, category: 'stills', title: 'Retrato 3', image: p3, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 4, category: 'stills', title: 'Retrato 4', image: p4, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 5, category: 'stills', title: 'Retrato 5', image: p5, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 6, category: 'stills', title: 'Retrato 6', image: p6, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 7, category: 'stills', title: 'Retrato 7', image: p7, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 8, category: 'stills', title: 'Retrato 8', image: p8, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 9, category: 'stills', title: 'Retrato 9', image: p9, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 10, category: 'stills', title: 'Retrato 10', image: p10, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 11, category: 'stills', title: 'Retrato 11', image: p11, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 12, category: 'stills', title: 'Retrato 12', image: p12, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 13, category: 'stills', title: 'Retrato 13', image: p13, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 14, category: 'stills', title: 'Retrato 14', image: p14, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 15, category: 'stills', title: 'Retrato 15', image: p15, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 16, category: 'stills', title: 'Retrato 16', image: p16, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 17, category: 'stills', title: 'Retrato 17', image: p17, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 18, category: 'stills', title: 'Retrato 18', image: p18, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 19, category: 'stills', title: 'Retrato 19', image: p19, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 20, category: 'stills', title: 'Retrato 20', image: p20, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 21, category: 'stills', title: 'Retrato 21', image: p21, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 22, category: 'stills', title: 'Retrato 22', image: p22, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 23, category: 'stills', title: 'Retrato 23', image: p23, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 24, category: 'stills', title: 'Retrato 24', image: p24, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 25, category: 'stills', title: 'Retrato 25', image: p25, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 26, category: 'stills', title: 'Retrato 26', image: p26, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 27, category: 'stills', title: 'Retrato 27', image: p27, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 28, category: 'stills', title: 'Retrato 28', image: p28, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 1, category: 'stills', title: 'Retrato 1', image: p1, thumb: p1thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 2, category: 'stills', title: 'Retrato 2', image: p2, thumb: p2thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 3, category: 'stills', title: 'Retrato 3', image: p3, thumb: p3thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 4, category: 'stills', title: 'Retrato 4', image: p4, thumb: p4thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 5, category: 'stills', title: 'Retrato 5', image: p5, thumb: p5thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 6, category: 'stills', title: 'Retrato 6', image: p6, thumb: p6thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 7, category: 'stills', title: 'Retrato 7', image: p7, thumb: p7thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 8, category: 'stills', title: 'Retrato 8', image: p8, thumb: p8thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 9, category: 'stills', title: 'Retrato 9', image: p9, thumb: p9thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 10, category: 'stills', title: 'Retrato 10', image: p10, thumb: p10thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 11, category: 'stills', title: 'Retrato 11', image: p11, thumb: p11thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 12, category: 'stills', title: 'Retrato 12', image: p12, thumb: p12thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 13, category: 'stills', title: 'Retrato 13', image: p13, thumb: p13thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 14, category: 'stills', title: 'Retrato 14', image: p14, thumb: p14thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 15, category: 'stills', title: 'Retrato 15', image: p15, thumb: p15thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 16, category: 'stills', title: 'Retrato 16', image: p16, thumb: p16thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 17, category: 'motion', title: 'Campanha 17', image: p17, thumb: p17thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 18, category: 'motion', title: 'Campanha 18', image: p18, thumb: p18thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 19, category: 'stills', title: 'Retrato 19', image: p19, thumb: p19thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 20, category: 'stills', title: 'Retrato 20', image: p20, thumb: p20thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 21, category: 'stills', title: 'Retrato 21', image: p21, thumb: p21thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 22, category: 'stills', title: 'Retrato 22', image: p22, thumb: p22thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 23, category: 'stills', title: 'Retrato 23', image: p23, thumb: p23thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 24, category: 'stills', title: 'Retrato 24', image: p24, thumb: p24thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 25, category: 'stills', title: 'Retrato 25', image: p25, thumb: p25thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 26, category: 'stills', title: 'Retrato 26', image: p26, thumb: p26thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 27, category: 'stills', title: 'Retrato 27', image: p27, thumb: p27thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 28, category: 'stills', title: 'Retrato 28', image: p28, thumb: p28thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
 
     // Campanha
-    { id: 29, category: 'motion', title: 'Campanha Italia 1', image: c1, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 30, category: 'motion', title: 'Campanha Italia 2', image: c2, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 31, category: 'motion', title: 'Campanha Italia 3', image: c3, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 32, category: 'motion', title: 'Campanha Italia 4', image: c4, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 33, category: 'motion', title: 'Campanha Italia 5', image: c5, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 34, category: 'motion', title: 'Campanha Italia 6', image: c6, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 35, category: 'motion', title: 'Campanha Italia 7', image: c7, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 36, category: 'motion', title: 'Campanha Italia 8', image: c8, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 37, category: 'motion', title: 'Campanha Italia 9', image: c9, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 38, category: 'motion', title: 'Campanha LVYL 1', image: c10, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 39, category: 'motion', title: 'Campanha LVYL 2', image: c11, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 40, category: 'motion', title: 'Campanha LVYL 3', image: c12, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 41, category: 'motion', title: 'Campanha LVYL 4', image: c13, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 42, category: 'motion', title: 'Campanha LVYL 5', image: c14, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 43, category: 'motion', title: 'Campanha LVYL 6', image: c15, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 44, category: 'motion', title: 'Campanha LVYL 7', image: c16, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
-    { id: 45, category: 'motion', title: 'Campanha LVYL 8', image: c17, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 29, category: 'motion', title: 'Campanha Italia 1', image: c1, thumb: c1thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 30, category: 'motion', title: 'Campanha Italia 2', image: c2, thumb: c2thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 31, category: 'motion', title: 'Campanha Italia 3', image: c3, thumb: c3thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 32, category: 'motion', title: 'Campanha Italia 4', image: c4, thumb: c4thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 33, category: 'motion', title: 'Campanha Italia 5', image: c5, thumb: c5thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 34, category: 'motion', title: 'Campanha Italia 6', image: c6, thumb: c6thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 35, category: 'motion', title: 'Campanha Italia 7', image: c7, thumb: c7thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 36, category: 'motion', title: 'Campanha Italia 8', image: c8, thumb: c8thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 37, category: 'motion', title: 'Campanha Italia 9', image: c9, thumb: c9thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 38, category: 'motion', title: 'Campanha LVYL 1', image: c10, thumb: c10thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 39, category: 'motion', title: 'Campanha LVYL 2', image: c11, thumb: c11thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 40, category: 'motion', title: 'Campanha LVYL 3', image: c12, thumb: c12thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 41, category: 'motion', title: 'Campanha LVYL 4', image: c13, thumb: c13thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 42, category: 'motion', title: 'Campanha LVYL 5', image: c14, thumb: c14thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 43, category: 'motion', title: 'Campanha LVYL 6', image: c15, thumb: c15thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 44, category: 'motion', title: 'Campanha LVYL 7', image: c16, thumb: c16thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
+    { id: 45, category: 'motion', title: 'Campanha LVYL 8', image: c17, thumb: c17thumb, exif: { camera: 'Canon', iso: '400', aperture: '2.8', shutter: '1/250' }},
   ];
 
   const filteredItems = activeFilter === 'all'
@@ -217,11 +267,13 @@ function Portfolio() {
                 className="portfolio-item"
                 whileHover={{ y: -10 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                onClick={() => handleImageClick(index)}
               >
-                <div className="portfolio-image-wrapper">
-                  <img src={portfolioItem.image} alt={portfolioItem.title} loading="lazy" />
-                </div>
+                <ProgressiveImage
+                  thumbnail={portfolioItem.thumb}
+                  fullImage={portfolioItem.image}
+                  alt={portfolioItem.title}
+                  onClick={() => handleImageClick(index)}
+                />
               </motion.div>
             ))}
           </Masonry>

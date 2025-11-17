@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3>DIOGO BORDIN</h3>
-            <p>Fotógrafo & Modelo</p>
+            <p>Fotógrafo</p>
           </div>
 
           <div className="footer-section">
@@ -24,6 +24,7 @@ function Footer() {
           <div className="footer-section">
             <h4>Contato</h4>
             <p>contato@dbordin.com</p>
+            <p><a href="https://instagram.com/projectdbordin" target="_blank" rel="noopener noreferrer">@projectdbordin</a></p>
           </div>
         </div>
 
