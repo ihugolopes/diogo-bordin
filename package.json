@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "generate-thumbnails": "node scripts/generate-thumbnails.js",
+    "optimize-images": "node scripts/optimize-originals.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
