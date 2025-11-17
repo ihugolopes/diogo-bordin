@@ -270,7 +270,6 @@ function Portfolio() {
               >
                 <ProgressiveImage
                   thumbnail={portfolioItem.thumb}
-                  fullImage={portfolioItem.image}
                   alt={portfolioItem.title}
                   onClick={() => handleImageClick(index)}
                 />
