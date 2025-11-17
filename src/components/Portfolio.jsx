@@ -6,9 +6,9 @@ import ProgressiveImage from './ProgressiveImage';
 import './Portfolio.css';
 
 // Portraits
-import p1 from '../assets/images/portraits/550A8F47-EF1E-4AD0-992B-857D56C5814B.JPEG';
-import p2 from '../assets/images/portraits/CY5A0692.png';
-import p3 from '../assets/images/portraits/CY5A0700.png';
+import p1 from '../assets/images/portraits/550A8F47-EF1E-4AD0-992B-857D56C5814B.jpg';
+import p2 from '../assets/images/portraits/CY5A0692.jpg';
+import p3 from '../assets/images/portraits/CY5A0700.jpg';
 import p4 from '../assets/images/portraits/CY5A0717-Edit-2.jpg';
 import p5 from '../assets/images/portraits/CY5A0731-Edit-2.jpg';
 import p6 from '../assets/images/portraits/CY5A0735.jpg';
@@ -19,7 +19,7 @@ import p10 from '../assets/images/portraits/CY5A1746.jpg';
 import p11 from '../assets/images/portraits/CY5A1761.jpg';
 import p12 from '../assets/images/portraits/Canon EOS 7D120.jpg';
 import p13 from '../assets/images/portraits/Canon EOS 7D189.jpg';
-import p14 from '../assets/images/portraits/E449AEAF-4A41-4C2C-B5FC-3CAF0DA55CFE.JPEG';
+import p14 from '../assets/images/portraits/E449AEAF-4A41-4C2C-B5FC-3CAF0DA55CFE.jpg';
 import p15 from '../assets/images/portraits/IMG_1208.jpg';
 import p16 from '../assets/images/portraits/IMG_3187.jpg';
 import p17 from '../assets/images/portraits/_MG_0169-1.jpg';
@@ -77,14 +77,14 @@ import c8 from '../assets/images/campanha/Italia/_MG_0416-70.jpg';
 import c9 from '../assets/images/campanha/Italia/_MG_0515-91.jpg';
 
 // Campanha LVYL
-import c10 from '../assets/images/campanha/LVYL/IMG_2313.JPG';
-import c11 from '../assets/images/campanha/LVYL/IMG_2339.JPG';
-import c12 from '../assets/images/campanha/LVYL/IMG_2340.JPG';
-import c13 from '../assets/images/campanha/LVYL/IMG_2362.JPG';
-import c14 from '../assets/images/campanha/LVYL/IMG_2387.JPG';
-import c15 from '../assets/images/campanha/LVYL/IMG_2396.JPG';
-import c16 from '../assets/images/campanha/LVYL/IMG_2401.JPG';
-import c17 from '../assets/images/campanha/LVYL/IMG_2406.JPG';
+import c10 from '../assets/images/campanha/LVYL/IMG_2313.jpg';
+import c11 from '../assets/images/campanha/LVYL/IMG_2339.jpg';
+import c12 from '../assets/images/campanha/LVYL/IMG_2340.jpg';
+import c13 from '../assets/images/campanha/LVYL/IMG_2362.jpg';
+import c14 from '../assets/images/campanha/LVYL/IMG_2387.jpg';
+import c15 from '../assets/images/campanha/LVYL/IMG_2396.jpg';
+import c16 from '../assets/images/campanha/LVYL/IMG_2401.jpg';
+import c17 from '../assets/images/campanha/LVYL/IMG_2406.jpg';
 
 // Campanha Thumbnails
 import c1thumb from '../assets/images/thumbnails/campanha/Italia/_MG_0205-26.jpg';
