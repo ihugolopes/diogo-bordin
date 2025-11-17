@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Masonry from 'react-masonry-css';
 import Lightbox from './Lightbox';
-import ProgressiveImage from './ProgressiveImage';
 import './Portfolio.css';
 
 // Portraits
@@ -268,11 +267,9 @@ function Portfolio() {
                 whileHover={{ y: -10 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >
-                <ProgressiveImage
-                  thumbnail={portfolioItem.thumb}
-                  alt={portfolioItem.title}
-                  onClick={() => handleImageClick(index)}
-                />
+                <div className="portfolio-image-wrapper" onClick={() => handleImageClick(index)}>
+                  <img src={portfolioItem.thumb} alt={portfolioItem.title} loading="lazy" />
+                </div>
               </motion.div>
             ))}
           </Masonry>
