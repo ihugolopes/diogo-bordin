@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import './Hero.css';
 import img1 from '../assets/images/inicio/IMG_9240.jpg';
 import img2 from '../assets/images/inicio/JPEG image 3.jpg';
-import img3 from '../assets/images/inicio/horizonta60x40-1.png';
-import img4 from '../assets/images/inicio/horizonta60x40-2.png';
+import img3 from '../assets/images/inicio/horizonta60x40-1.jpg';
+import img4 from '../assets/images/inicio/horizonta60x40-2.jpg';
 
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
